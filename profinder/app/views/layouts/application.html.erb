@@ -26,7 +26,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", about_path %></li>
         <% if current_user %>
-          <%= button_to "Sign Out", destroy_user_session_path, class: 'btn btn-primary navbar-btn' %>
+          <%= button_to "Sign Out", destroy_user_session_path, class: 'btn btn-primary navbar-btn', method: :delete %>
         <% else %>
           <li><%= link_to "Sign Up", new_user_registration_path  %></li>
           <li><%= link_to "Log In", new_user_session_path  %></li>
