@@ -9,7 +9,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-static-top">
+  <nav class="navbar navbar-inverse navbar-static-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -27,10 +27,10 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", about_path %></li>
         <% if current_user %>
-          <%= button_to "Sign Out", destroy_user_session_path, class: 'btn btn-primary navbar-btn', method: :delete %>
+          <li><%= button_to "Sign Out", destroy_user_session_path, class: 'btn btn-primary navbar-btn', method: :delete %></li>
         <% else %>
-          <li><%= link_to "Sign Up", new_user_registration_path  %></li>
-          <li><%= link_to "Log In", new_user_session_path  %></li>
+          <li><%= button_to "Sign Up", new_user_registration_path, class: 'btn btn-success  navbar-btn', method: :get  %></li>
+          <li><%= button_to "Log In", new_user_session_path, class: 'btn btn-info  navbar-btn'  %></li>
         <% end %>
         
       </ul>
@@ -38,8 +38,6 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
 
   <%= yield %>
 

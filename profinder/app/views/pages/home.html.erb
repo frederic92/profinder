@@ -1,6 +1,4 @@
 
-<%= link_to "Create a new profile", new_user_profile_path(current_user) if current_user %>
-
 <div class="jumbotron">
     
     <div class="container text-center">
@@ -8,6 +6,13 @@
             <h1>Welcome to ProFindr</h1>
             <h3>Here comes the social networking platform that you've been waiting for</h3>
         </div>
+        <% if user_signed_in? %>
+    <% if current_user.profile %>
+        <%= link_to "See your profile", user_path(current_user), class: 'btn btn-success'  %>
+    <% else %>
+        <%= link_to "Create a new profile", new_user_profile_path(current_user), class: 'btn btn-success'  %>
+    <% end %>
+<% end %>
         
     </div>
     
