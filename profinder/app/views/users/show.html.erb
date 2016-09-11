@@ -1,4 +1,6 @@
-<h1>Hello, <%= @user.profile.first_name %></h1>
-<h2>Welcome to your profile page.</h2>
+<h1>Hello, my name is <%= @user.profile.first_name %></h1>
+<h2>Welcome to my profile page.</h2>
 <hr>
-<%= link_to "Edit your profile", edit_user_profile_path(current_user), class: 'btn btn-primary' %>
+<% if @user == current_user %>
+    <%= link_to "Edit your profile", edit_user_profile_path(current_user), class: 'btn btn-primary' %>
+<% end %>
