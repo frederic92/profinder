@@ -1,6 +1,8 @@
 <h1>Hello, my name is <%= @user.profile.first_name %></h1>
 <h2>Welcome to my profile page.</h2>
+<% if @user.profile.avatar_file_name %>
 <%= image_tag @user.profile.avatar.url(:thumb) %>
+<% end %>
 <hr>
 <% if @user == current_user %>
     <%= link_to "Edit your profile", edit_user_profile_path(current_user), class: 'btn btn-primary' %>
