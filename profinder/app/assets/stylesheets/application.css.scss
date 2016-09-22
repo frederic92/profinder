@@ -75,7 +75,7 @@ nav.navbar.navbar-inverse {
 
 
 .navbar .navbar-header .navbar-brand i {
-    color: #1ab5fe; 
+    color: #1da1f2;
     font-size: 30px;
 }
 
@@ -88,7 +88,7 @@ nav.navbar.navbar-inverse {
 }
 
 .navbar .navbar-collapse .navbar-nav a:hover {
-    background-color: #1ab5fe;
+    background-color: #1da1f2;
 }
 
 .navbar .navbar-collapse .navbar-nav .active a {
@@ -114,6 +114,12 @@ nav.navbar.navbar-inverse {
 }
 
 
+#my-slider .item.active .slider-content .seo {
+    color: #1da1f2;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
 #my-slider .item .slider-content h2 {
     font-size: 60px;
     font-weight: 300;
@@ -129,33 +135,216 @@ nav.navbar.navbar-inverse {
     color: #fff;
 }
 
-#my-slider .item.active .slider-content .seo {
-    color: #1ab5fe;
-    text-transform: uppercase;
-    font-weight: 900;
-}
 
 #my-slider .item.active .slider-content .responsive {
-    color: #1ab5fe;
+    color: #1da1f2;
     text-transform: uppercase;
     font-weight: 900;
 }
 
 #my-slider .item.active .slider-content .logo {
-    color: #1ab5fe;
+    color: #1da1f2;
     text-transform: uppercase;
     font-weight: 900;
 }
 
 .carousel.slide .carousel-inner .item .btn {
     color: #fff;
-    background-color: #1ab5fe;
+    background-color: #1da1f2;
     opacity: 0.8;
-    border: 1px solid #1ab5fe;
+    border: 1px solid #1da1f2;
     margin-top: 50px;
     padding: 10px 25px;
     font-size: 16px;
 }
+
+/*========= FEATURED SERVICES SECTION STYLES ======*/
+
+#feature {
+    background-color: #333;
+    
+}
+
+.features .text-center {
+    margin-bottom: 70px;
+    color: #fff;
+}
+
+section .text-center h2 {
+    font-size: 30px;  
+}
+
+
+.features .text-center p {
+    margin-bottom: 30px;
+}
+
+.features .text-center p a {
+    text-decoration: none;
+    color: #1da1f2;
+}
+
+.features .text-center p a:hover {
+    border-bottom: 1px solid #1da1f2;
+    padding-bottom: 3px;
+}
+
+ hr {
+    width: 70px;
+    border-top: 4px solid #1da1f2;
+}
+
+.features .text-center hr {
+    color: #1ab5fe;
+     border-top: 4px solid #1da1f2;
+}
+
+
+    
+    
+
+
+.features .feature-wrap i {
+    font-size: 50px;
+    color: #1da1f2;
+    border: 3px solid #333;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.features .feature-wrap h3 {
+    font-size: 20px;
+    color: #1da1f2;
+}
+
+.features .feature-wrap p {
+    
+}
+
+
+/*========== BUTTONS STYLES ======*/
+
+.btn.btn-primary.login-btn {
+	background: #1da1f2;
+	border-color: #1da1f2;
+}
+
+.nav.navbar-nav li .signup-in-out {
+	background-color: #1da1f2;
+}
+
+.navbar-collapse .navbar-nav .dropdown-menu li a {
+	margin: 0 0 5px 0;
+	background-color: #333;
+}
+
+/*============ SIGN UP PAGE STYLES ============*/
+
+.row .col-md-4.col-md-offset-4 h2 {
+	margin-top: 60px;
+}
+
+
+
+/*=========== COMMUNITY PAGE STYLE ================== */
+
+
+.index-header {
+	padding-bottom: 40px;
+	background: #1da1f2;
+	margin-bottom: 50px;
+	opacity: 0.8;
+	
+}
+
+.index-header h2 {
+	margin-top: 0px;
+	color: #fff;
+	padding-top: 40px;
+}
+
+.pro-mem .uou-block-6a {
+    background: #333;
+    padding-bottom: 0px;
+    box-shadow: 0 0 5px rgba(206, 206, 206, 1);
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #737373;
+    cursor: default;
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.uou-block-6a img {
+    width: 100%;
+    height: 25%;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.pro-mem .uou-block-6a h6 {
+    margin-bottom: 10px;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 24px;
+    color:  #1ab5fe;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-margin-before: 2.33em;
+    -webkit-margin-after: 2.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    
+}
+
+.uou-block-6a h6 span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.pro-mem .uou-block-6a p {
+    font-size: 14px;
+    margin: 0 0 24px 0;
+    font-weight: 400;
+    line-height: 27px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
