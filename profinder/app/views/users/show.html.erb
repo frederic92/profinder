@@ -6,10 +6,23 @@
 </div>
 
 <div class="container">
-    <div class="col-md-4">
+    <div class="col-md-3">
         <% if @user.profile.avatar_file_name %>
-            <%= image_tag @user.profile.avatar.url %>
+            <figure class="snip1336">
+              <figcaption>
+                  <% if @user.profile.avatar_file_name %>
+                    <%= image_tag @user.profile.avatar.url(:medium), class: 'img-responsive' %>
+                  <% end %>
+                <h2>Hans Down<span>Engineer</span></h2>
+                <p>I'm looking for something that can deliver a 50-pound payload of snow on a small feminine target. Can you suggest something? Hello...? </p>
+                <a href="#" class="follow">Follow</a>
+                <a href="#" class="info">More Info</a>
+              </figcaption>
+            </figure>
         <% end %>
+    </div>
+    <div class="col-md-6">
+        <h3><strong><%= @user.profile.job_title %></strong> at <%= @user.profile.company_name %></h3>
     </div>
 </div>
 

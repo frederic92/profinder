@@ -7,71 +7,28 @@
   <div class="pro-mem">
     <div class="container pb30">
       <div class="row">
-        <div class="col-sm-3">
-          <div class="uou-block-6a"> <img src="assets/team/01.jpg" alt="pro">
-            <h6>Jessica Walsh <span>Founder &amp; Web Designer</span></h6>
-            <p><i class="fa fa-map-marker"></i> New York, USA</p>
-            <%= link_to "View Profile", "#", class: "btn btn-primary btn-block" %>
+        <% @users.each do |user| %>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <figure class="snip1336">
+              <figcaption>
+                  <% if user.profile.avatar_file_name %>
+                    <%= image_tag user.profile.avatar.url(:medium) %>
+                  <% end %>
+                <h2><%= user.profile.first_name.capitalize %> <%= user.profile.last_name.capitalize %><span><%= user.profile.job_title %></span></h2>
+                <p>I'm looking for something that can deliver a 50-pound payload of snow on a small feminine target. Can you suggest something? Hello...? </p>
+                <%= link_to "Profile", user_path(user), class:"follow" %>
+                <a href="#" class="info">Follow</a>
+              </figcaption>
+            </figure>
+            <!-- end .uou-block-6a --> 
           </div>
-          <!-- end .uou-block-6a --> 
-        </div>
-        <div class="col-sm-3">
-          <div class="uou-block-6a"> <img src="assets/team/02.jpg" alt="pro">
-            <h6>Jessica Walsh <span>Founder &amp; Web Designer</span></h6>
-            <p><i class="fa fa-map-marker"></i> New York, USA</p>
-            <%= link_to "View Profile", "#", class: "btn btn-primary btn-block" %>
-          </div>
-          <!-- end .uou-block-6a --> 
-        </div>
-        <div class="col-sm-3">
-          <div class="uou-block-6a"> <img src="assets/team/03.jpg" alt="pro">
-            <h6>Jessica Walsh <span>Founder &amp; Web Designer</span></h6>
-            <p><i class="fa fa-map-marker"></i> New York, USA</p>
-            <%= link_to "View Profile", "#", class: "btn btn-primary btn-block" %>
-          </div>
-          <!-- end .uou-block-6a --> 
-        </div>
-        <div class="col-sm-3">
-          <div class="uou-block-6a"> <img src="assets/team/04.jpg" alt="pro">
-            <h6>Jessica Walsh <span>Founder &amp; Web Designer</span></h6>
-            <p><i class="fa fa-map-marker"></i> New York, USA</p>
-            <%= link_to "View Profile", "#", class: "btn btn-primary btn-block" %>
-          </div>
-          <!-- end .uou-block-6a --> 
-        </div>
-        <div class="col-sm-3">
-          <div class="uou-block-6a"> <img src="assets/team/01.jpg" alt="pro">
-            <h6>Jessica Walsh <span>Founder &amp; Web Designer</span></h6>
-            <p><i class="fa fa-map-marker"></i> New York, USA</p>
-            <%= link_to "View Profile", "#", class: "btn btn-primary btn-block" %>
-          </div>
-          <!-- end .uou-block-6a --> 
-        </div>
-        <div class="col-sm-3">
-          <div class="uou-block-6a"> <img src="assets/team/02.jpg" alt="pro">
-            <h6>Jessica Walsh <span>Founder &amp; Web Designer</span></h6>
-            <p><i class="fa fa-map-marker"></i> New York, USA</p>
-            <%= link_to "View Profile", "#", class: "btn btn-primary btn-block" %>
-          </div>
-          <!-- end .uou-block-6a --> 
-        </div>
-        <div class="col-sm-3">
-          <div class="uou-block-6a"> <img src="assets/team/03.jpg" alt="pro">
-            <h6>Jessica Walsh <span>Founder &amp; Web Designer</span></h6>
-            <p><i class="fa fa-map-marker"></i> New York, USA</p>
-            <%= link_to "View Profile", "#", class: "btn btn-primary btn-block" %>
-          </div>
-          <!-- end .uou-block-6a --> 
-        </div>
-        <div class="col-sm-3">
-          <div class="uou-block-6a"> <img src="assets/team/04.jpg" alt="pro">
-            <h6>Jessica Walsh <span>Founder &amp; Web Designer</span></h6>
-            <p><i class="fa fa-map-marker"></i> New York, USA</p>
-            <%= link_to "View Profile", "#", class: "btn btn-primary btn-block" %>
-          </div>
-          <!-- end .uou-block-6a --> 
-        </div>
+        <% end %>
+        
       </div>
     </div>
   </div>
 </div>
+
+
+
+

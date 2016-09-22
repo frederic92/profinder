@@ -41,16 +41,18 @@
                            <li><a href="#services">Services</a></li>
                            <li><a href="#portfolio">Portfolio</a></li>
                            <li><a href="#contact">Contact</a></li>
-                           <% if current_user %>
-                           <li class="dropdown">
-                              <a href="#" class="dropdown-toggle signup-in-out" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Dashboard <span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                                <li class="text-center"><%= link_to "Profile", user_path(current_user) %></li>
-                                <li class="text-center"><%= link_to "Community", users_path %></li>
-                                <li class="text-center"><%= link_to 'Sign out', destroy_user_session_path, class: 'signup-in-out', method: :DELETE %></li>
-                              </ul>
-                            </li>
-
+                           <% if current_user && current_user.profile %>
+                             <li class="dropdown">
+                                <a class="dropdown-toggle signup-in-out" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <%= current_user.profile.first_name.capitalize %> <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li class="text-center"><%= link_to "Profile", user_path(current_user) %></li>
+                                  <li class="text-center"><%= link_to "Community", users_path %></li>
+                                  <li class="text-center"><%= link_to 'Sign out', destroy_user_session_path, class: 'signup-in-out', method: :DELETE %></li>
+                                </ul>
+                             </li>
+                           <% elsif current_user && !current_user.profile %>
+                             <li><%= link_to 'Create a profile', new_user_profile_path(current_user), class: 'signup-in-out' %></li>
+                             <li><%= link_to 'Sign out', destroy_user_session_path, class: 'signup-in-out', method: :DELETE %></li>
                            <% else %>
                              <li><%= link_to 'LOG IN', new_user_session_path, class: 'signup-in-out' %></li>
                              <li><%= link_to 'SIGN UP', new_user_registration_path, class: 'signup-in-out' %></li>
