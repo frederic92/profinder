@@ -16,3 +16,7 @@
 
 //= require turbolinks
 //= require_tree .
+
+
+
+/*======== IMAGE UPLOAD JAVASCRIPT =========*/

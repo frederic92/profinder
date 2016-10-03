@@ -75,7 +75,7 @@ nav.navbar.navbar-inverse {
 
 
 .navbar .navbar-header .navbar-brand i {
-    color: #1da1f2;
+    color: #029AE4;
     font-size: 30px;
 }
 
@@ -88,7 +88,7 @@ nav.navbar.navbar-inverse {
 }
 
 .navbar .navbar-collapse .navbar-nav a:hover {
-    background-color: #1da1f2;
+    background-color: #029AE4;
 }
 
 .navbar .navbar-collapse .navbar-nav .active a {
@@ -115,7 +115,7 @@ nav.navbar.navbar-inverse {
 
 
 #my-slider .item.active .slider-content .seo {
-    color: #1da1f2;
+    color: #029AE4;
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -137,22 +137,22 @@ nav.navbar.navbar-inverse {
 
 
 #my-slider .item.active .slider-content .responsive {
-    color: #1da1f2;
+    color: #029AE4;
     text-transform: uppercase;
     font-weight: 900;
 }
 
 #my-slider .item.active .slider-content .logo {
-    color: #1da1f2;
+    color: #029AE4;
     text-transform: uppercase;
     font-weight: 900;
 }
 
 .carousel.slide .carousel-inner .item .btn {
     color: #fff;
-    background-color: #1da1f2;
+    background-color: #029AE4;
     opacity: 0.8;
-    border: 1px solid #1da1f2;
+    border: 1px solid #029AE4;
     margin-top: 50px;
     padding: 10px 25px;
     font-size: 16px;
@@ -161,7 +161,7 @@ nav.navbar.navbar-inverse {
 /*========= FEATURED SERVICES SECTION STYLES ======*/
 
 #feature {
-    background-color: #333;
+    background-color: #000;
     
 }
 
@@ -181,22 +181,22 @@ section .text-center h2 {
 
 .features .text-center p a {
     text-decoration: none;
-    color: #1da1f2;
+    color: #029AE4;
 }
 
 .features .text-center p a:hover {
-    border-bottom: 1px solid #1da1f2;
+    border-bottom: 1px solid #029AE4;
     padding-bottom: 3px;
 }
 
  hr {
     width: 70px;
-    border-top: 4px solid #1da1f2;
+    border-top: 4px solid #029AE4;
 }
 
 .features .text-center hr {
     color: #1ab5fe;
-     border-top: 4px solid #1da1f2;
+     border-top: 4px solid #029AE4;
 }
 
 
@@ -206,7 +206,7 @@ section .text-center h2 {
 
 .features .feature-wrap i {
     font-size: 50px;
-    color: #1da1f2;
+    color: #029AE4;
     border: 3px solid #333;
     border-radius: 50%;
     padding: 20px;
@@ -215,7 +215,7 @@ section .text-center h2 {
 
 .features .feature-wrap h3 {
     font-size: 20px;
-    color: #1da1f2;
+    color: #029AE4;
 }
 
 .features .feature-wrap p {
@@ -226,12 +226,12 @@ section .text-center h2 {
 /*========== BUTTONS STYLES ======*/
 
 .btn.btn-primary.login-btn {
-	background: #1da1f2;
-	border-color: #1da1f2;
+	background: #029AE4;
+	border-color: #029AE4;
 }
 
 .nav.navbar-nav li .signup-in-out {
-	background-color: #1da1f2;
+	background-color: #029AE4;
 }
 
 .navbar-collapse .navbar-nav .dropdown-menu li a {
@@ -252,7 +252,7 @@ section .text-center h2 {
 
 .index-header {
 	padding-bottom: 40px;
-	background: #1da1f2;
+	background: #029AE4;
 	margin-bottom: 50px;
 	opacity: 0.8;
 	
@@ -264,196 +264,155 @@ section .text-center h2 {
 	padding-top: 40px;
 }
 
-.pro-mem .uou-block-6a {
-    background: #333;
-    padding-bottom: 0px;
-    box-shadow: 0 0 5px rgba(206, 206, 206, 1);
-    position: relative;
-    display: block;
-    text-align: center;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    color: #737373;
-    cursor: default;
-    content: " ";
-    display: table;
-    clear: both;
+.row .thumbnail {
+	display: block;
+	height: 350px;
+	padding: 0px;
+	
 }
 
-.uou-block-6a img {
-    width: 100%;
-    height: 25%;
-    -webkit-transition: 0.2s ease-in;
-    -o-transition: 0.2s ease-in;
-    transition: 0.2s ease-in;
-    max-width: 100%;
-    vertical-align: middle;
+.row .thumbnail img {
+	width: 100%;
+	height: 200px;
 }
 
-.pro-mem .uou-block-6a h6 {
-    margin-bottom: 10px;
-    line-height: 24px;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    margin-top: 24px;
-    color:  #1da1f2;
-    display: block;
-    text-align: center;
-    box-sizing: border-box;
-    -webkit-margin-before: 2.33em;
-    -webkit-margin-after: 2.33em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    
-}
-
-.uou-block-6a h6 span {
-    display: block;
-    font-weight: normal;
-    font-size: 14px;
+.caption .follow {
+    background-color: #029AE4;
+    padding: 10px 20px;
     color: #fff;
-    letter-spacing: 1px;
+    text-decoration: none;
+    margin-top: 20px;
+    border: 1px solid #029AE4;
 }
 
-.pro-mem .uou-block-6a p {
-    font-size: 14px;
-    margin: 0 0 24px 0;
-    font-weight: 400;
-    line-height: 27px;
-    display: block;
+.caption h5 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.center {
     text-align: center;
+}
+
+.caption .info {
+    padding: 10px 20px;
+    border: 1px solid #029AE4;
+    background-color: #fff;
+    color: #029AE4;
+    text-decoration: none;
+}
+
+.community-page {
+    background-color: #EEEEEE;
+}
+
+.caption .info:hover {
+    background-color: #029AE4;
+    padding: 10px 20px;
     color: #fff;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+    text-decoration: none;
+    margin-top: 20px;
 }
 
-.pro-mem .uou-block-6a .btn {
-	background-color: #1da1f2;
-	border-color: #1da1f2;
-	border-radius: 0;
+.caption .follow:hover {
+    padding: 10px 20px;
+    border: 1px solid #029AE4;
+    background-color: #fff;
+    color: #029AE4;
+    text-decoration: none;
 }
 
 
-/*====== CODEPEN CODE TEST =========== */
+
+
+
+
+/*====== SHOW USER PROFILE PAGE STYLE =========== */
+
+.main-content .btn-group {
+    margin: 20px;
+}
+
+.main-content .btn-group .btn.btn-primary:hover {
+    background-color: #029AE4;
+}
+
+.main-content {
+    border: 3px solid #f5f5f1;
+    padding: 10px;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social .fa.fa-facebook-square {
+    color: #3B5998;
+}
+
+.social .fa.fa-twitter-square {
+    color: #029AE4;
+}
+
+.social .fa.fa-google-plus-square {
+    color: #E53935;
+}
+
+
+
+
 
  
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
-.snip1336 {
-  font-family: 'Roboto', Arial, sans-serif;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-  color: #ffffff;
-  text-align: left;
-  line-height: 1.4em;
-  background-color: #141414;
-}
-.snip1336 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-.snip1336 img {
-  max-width: 100%;
-  height: 200px;
-  vertical-align: top;
-  margin: auto;
-  opacity: 0.85;
-}
-.snip1336 figcaption {
-  width: 100%;
-  background-color: #141414;
-  padding: 25px;
-  position: relative;
-}
-.snip1336 figcaption:before {
-  position: absolute;
-  content: '';
-  bottom: 100%;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 55px 0 0 400px;
-  border-color: transparent transparent transparent #141414;
-}
-.snip1336 figcaption a {
-  padding: 5px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-size: 0.7em;
-  text-transform: uppercase;
-  margin: 10px 0;
-  display: inline-block;
-  width: 47%;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-.snip1336 figcaption a:hover {
-  opacity: 1;
-}
-
-.snip1336 .follow {
-  margin-right: 4%;
-  border-color: #1da1f2;
-  color: #fff;
-  background-color: #1da1f2;
-}
-
-.snip1336 .follow:hover {
-	opacity: 0.8;
-}
-
-
-.snip1336 .info {
-	color: #1da1f2;
-	border-color: #1da1f2;
-}
-
-.snip1336 .info:hover {
-  border-color: #1da1f2;
-  color: #fff;
-  background-color: #1da1f2;
-}
-
-.snip1336 h2 {
-  margin: 0 0 5px;
-  font-weight: 200;
-}
-.snip1336 h2 span {
-  display: block;
-  font-size: 0.5em;
-  color: #1da1f2;
-}
-.snip1336 p {
-  margin: 0 0 10px;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  opacity: 0.8;
-}
-/* Demo purposes only */
-body {
-  background-color: #212121;
-}
 
 
 
 
 
+/*======= NEW PROFILE PAGE =============*/
 
+.bigger {
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
+
+
+
+.hr-edit {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.btn.btn-primary {
+    background-color: #029AE4;
+    border-color: #029AE4;
+}
+
+input.form-control {
+    border: 1px solid #333;
+}
+
+select.form-control {
+    border: 1px solid #333;
+}
+
+input.form-control:focus {
+     border: 2px solid #029AE4;
+}
+
+select.form-control:focus {
+    border: 2px solid #029AE4;
+}
+
+textarea.form-control {
+    border: 1px solid #029AE4;
+}
+
+textarea.form-control {
+    border: 2px solid #029AE4;
+}
 
 
 

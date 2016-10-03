@@ -8,7 +8,10 @@ class UsersController < ApplicationController
     end
     
     def index
-        @users = User.all
-        
+        if params[:field].blank?
+            @users = User.all.order("created_at DESC")
+        else
+            
+        end
     end
 end
